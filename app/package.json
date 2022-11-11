@@ -74,6 +74,7 @@
 		"zodix": "^0.3.0"
 	},
 	"devDependencies": {
+		"@herald/eslint-config": "workspace:^1.0.0",
 		"@remix-run/dev": "1.7.5",
 		"@remix-run/eslint-config": "1.7.5",
 		"@remix-run/serve": "1.7.5",

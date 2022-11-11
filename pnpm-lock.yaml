@@ -4,8 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@typescript-eslint/eslint-plugin': ^5.42.1
-      '@typescript-eslint/parser': ^5.42.1
+      '@herald/eslint-config': workspace:*
       eslint: ^8.27.0
       husky: ^8.0.2
       lint-staged: ^13.0.3
@@ -13,8 +12,7 @@ importers:
       turbo: ^1.6.3
       typescript: ^4.8.4
     devDependencies:
-      '@typescript-eslint/eslint-plugin': 5.42.1_2udltptbznfmezdozpdoa2aemq
-      '@typescript-eslint/parser': 5.42.1_rmayb2veg2btbq6mbmnyivgasy
+      '@herald/eslint-config': link:packages/eslint-config
       eslint: 8.27.0
       husky: 8.0.2
       lint-staged: 13.0.3
@@ -27,6 +25,7 @@ importers:
       '@aws-sdk/client-s3': 3.204.0
       '@aws-sdk/lib-storage': 3.204.0
       '@headlessui/react': 1.7.4
+      '@herald/eslint-config': workspace:^1.0.0
       '@prisma/client': 4.5.0
       '@radix-ui/react-accordion': 1.0.1
       '@radix-ui/react-alert-dialog': 1.0.2
@@ -142,6 +141,7 @@ importers:
       zod: 3.19.1
       zodix: 0.3.1_zod@3.19.1
     devDependencies:
+      '@herald/eslint-config': link:../packages/eslint-config
       '@remix-run/dev': 1.7.5_67odqug3q6zvwws4422s5yrks4
       '@remix-run/eslint-config': 1.7.5_u5s2ztivgin3yy4srvdhm3tgpm
       '@remix-run/serve': 1.7.5_biqbaboplfbrettd7655fr4n2y

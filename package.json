@@ -13,8 +13,7 @@
 		"format": "prettier --write \"**/*.{ts,tsx,md}\""
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.42.1",
-		"@typescript-eslint/parser": "^5.42.1",
+		"@herald/eslint-config": "workspace:*",
 		"eslint": "^8.27.0",
 		"husky": "^8.0.2",
 		"lint-staged": "^13.0.3",

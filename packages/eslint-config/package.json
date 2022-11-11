@@ -2,8 +2,7 @@
   "name": "@herald/eslint-config",
   "version": "1.0.0",
   "files": [
-    "web.js",
-    "node.js"
+	  "index.js"
   ],
   "publishConfig": {
     "access": "public"
