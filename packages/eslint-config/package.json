@@ -1,0 +1,21 @@
+{
+  "name": "@herald/eslint-config",
+  "version": "1.0.0",
+  "files": [
+    "web.js",
+    "node.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@remix-run/eslint-config": "1.7.5",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}
