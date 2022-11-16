@@ -29,7 +29,7 @@ const Dialog: FC<Props> = ({
 	title,
 	trigger,
 }) => {
-	const [isOpen, setIsOpen] = useState(false)
+	let [isOpen, setIsOpen] = useState(false)
 
 	return (
 		<DialogRoot open={isOpen} onOpenChange={setIsOpen}>

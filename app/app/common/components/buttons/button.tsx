@@ -5,8 +5,8 @@ const Button: FC<ButtonProps> = ({
 	bg = 'bg-gray-700',
 	children,
 	className,
-	isDisabled,
-	isLoading,
+	disabled,
+	loading,
 	loadingText,
 	onClick,
 	padding = 'px-4 py-1',
@@ -17,11 +17,11 @@ const Button: FC<ButtonProps> = ({
 	return (
 		<button
 			className={`focus-visible:ring-blend-darken inline-flex items-center justify-center rounded-md border border-transparent text-sm font-semibold hover:bg-blend-darken focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${className} ${bg} ${padding} ${shadow} ${textColor}`}
-			disabled={isDisabled}
+			disabled={disabled}
 			onClick={onClick}
 			type={type}
 		>
-			{isLoading && (
+			{loading && (
 				<svg
 					className='-ml-1 mr-2 h-4 w-4 animate-spin text-white'
 					xmlns='http://www.w3.org/2000/svg'
@@ -43,9 +43,10 @@ const Button: FC<ButtonProps> = ({
 					/>
 				</svg>
 			)}
-			{isLoading ? loadingText : children}
+			{loading ? loadingText : children}
 		</button>
 	)
 }
 
+Button.displayName = 'Button'
 export default Button

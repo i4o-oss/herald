@@ -2,6 +2,7 @@ import { Outlet } from '@remix-run/react'
 import { json } from '@remix-run/node'
 import type { LoaderFunction } from '@remix-run/node'
 import { auth } from '~/services/auth.server'
+import Header from '../components/app/header'
 
 export const loader: LoaderFunction = async ({ request }) => {
 	// If the user is here, it's already authenticated, if not redirect them to
@@ -12,8 +13,11 @@ export const loader: LoaderFunction = async ({ request }) => {
 
 export default function App() {
 	return (
-		<main className='flex h-full w-full flex-col items-center justify-start'>
-			<Outlet />
-		</main>
+		<>
+			<Header user={null} />
+			<main className='flex w-full flex-col items-center justify-start'>
+				<Outlet />
+			</main>
+		</>
 	)
 }

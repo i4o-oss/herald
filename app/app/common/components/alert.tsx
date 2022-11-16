@@ -29,7 +29,7 @@ const Alert: FC<AlertProps> = ({
 	action,
 	trigger = null,
 }) => {
-	const [isOpen, setIsOpen] = useState(false)
+	let [isOpen, setIsOpen] = useState(false)
 
 	return (
 		<AlertRoot open={isOpen} onOpenChange={setIsOpen}>

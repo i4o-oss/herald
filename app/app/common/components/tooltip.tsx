@@ -11,10 +11,9 @@ const Tooltip: FC<Props> = ({ content, trigger }) => {
 	return (
 		<TooltipPrimitive.Provider>
 			<TooltipPrimitive.Root>
-				<TooltipPrimitive.Trigger asChild>
-					{trigger}
-				</TooltipPrimitive.Trigger>
+				<TooltipPrimitive.Trigger>{trigger}</TooltipPrimitive.Trigger>
 				<TooltipPrimitive.Content
+					side='top'
 					sideOffset={4}
 					className={cx(
 						'radix-side-top:animate-slide-down-fade',

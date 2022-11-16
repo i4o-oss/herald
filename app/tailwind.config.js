@@ -1,7 +1,7 @@
-import tailwindRadix from 'tailwindcss-radix'
+const tailwindRadix = require('tailwindcss-radix')
 
 module.exports = {
-	content: ['./app/**/*.{js,jsx,ts,tsx}', './common/**/*.{js,jsx,ts,tsx}'],
+	content: ['./app/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
 			colors: {

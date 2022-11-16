@@ -19,7 +19,7 @@ export function Container(props: ContainerProps) {
 export default function Index() {
 	return (
 		<Container>
-			<img className='w-48' src='/images/logoipsum.svg' alt='Logo' />
+			<img className='w-48' src='/images/logo.svg' alt='Logo' />
 			<div className='flex w-full flex-col items-center justify-center space-y-2'>
 				<p className='text-center text-lg leading-8 text-white md:w-1/2'>
 					Headline that describes your web app

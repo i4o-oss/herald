@@ -12,8 +12,8 @@ export interface ButtonProps {
 	bg?: string
 	children?: ReactNode | string
 	className?: string
-	isDisabled?: boolean
-	isLoading?: boolean
+	disabled?: boolean
+	loading?: boolean
 	loadingText?: string
 	onClick?: React.MouseEventHandler<HTMLButtonElement>
 	padding?: string

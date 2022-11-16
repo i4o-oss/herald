@@ -4,7 +4,6 @@ import { Form, useLoaderData } from '@remix-run/react'
 import { auth } from '~/services/auth.server'
 import { sessionStorage } from '~/services/session.server'
 import { Container } from '~/routes/index'
-import { FaTwitter } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 
 export const loader: LoaderFunction = async ({ request }) => {
@@ -37,7 +36,7 @@ export default function () {
 					<div className='mb-8 flex flex-col items-center justify-center space-y-8'>
 						<img
 							className='w-48'
-							src='/images/logoipsum.svg'
+							src='/images/logo.svg'
 							alt='Logo'
 						/>
 						<div className='flex flex-col items-center justify-center space-y-4'>

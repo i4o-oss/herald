@@ -2,7 +2,7 @@
   <h3 align="center">Herald</h3>
 
   <p align="center">
-    Open-source changelogs, roadmaps, and in-app banners 
+    Open-source in-app banners 
     <br />
     <a href="https://useherald.com"><strong>Learn more »</strong></a>
     <br />
